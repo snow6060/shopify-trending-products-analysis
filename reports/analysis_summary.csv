@@ -1,0 +1,2 @@
+Total_Products,Total_Revenue,Total_Units_Sold,Avg_Price,Avg_Trend_Score,Best_Category,Best_Trend_Source,Model_R2_Score,Optimal_Price_Min,Optimal_Price_Max
+1000,8986432679.5,97621822,104.7095,81.67760000000001,Food & Beverage,TikTok Shop Viral,0.9991716202756165,45.375,139.375
