@@ -1,20 +1,16 @@
-📊 Shopify Trending Products 2025 - Data Analysis Project
-📋 Project Overview
+# 📊 Shopify Trending Products 2025 - Data Analysis Project
+
+## 📋 Project Overview
 A comprehensive data analysis of 1,000 trending Shopify products from 2025, examining pricing strategies, sales performance, trend patterns, and predictive modeling to identify success factors in e-commerce.
 
-🎯 Objectives
-Analyze product pricing strategies and their impact on sales
+## 🎯 Objectives
+- Analyze product pricing strategies and their impact on sales
+- Identify top-performing categories and trend sources
+- Build predictive models for product success
+- Generate actionable business insights for e-commerce optimization
+- Create a reproducible analysis pipeline
 
-Identify top-performing categories and trend sources
-
-Build predictive models for product success
-
-Generate actionable business insights for e-commerce optimization
-
-Create a reproducible analysis pipeline
-
-📁 Project Structure
-# Project Structure
+## 📁 Project Structure
 
 ```plaintext
 📦 SHOPIFY_TRENDING_PRODUCT_ANALYSIS
@@ -47,136 +43,115 @@ Create a reproducible analysis pipeline
 ├── 📄 README.md
 └── 📄 requirements.txt
 ```
-🚀 Quick Start
-Prerequisites
-Python 3.8+
 
-Jupyter Notebook
+## 🚀 Quick Start
 
-Git
+### Prerequisites
+- Python 3.8+
+- Jupyter Notebook
+- Git
 
-Installation
-Clone the repository:
-
-bash
+### Installation
+1. Clone the repository:
+```bash
 git clone https://github.com/snow6060/shopify-trending-products-analysis.git
 cd shopify-trending-products-analysis
-Create a virtual environment (optional but recommended):
+```
 
-bash
+2. Create a virtual environment (optional but recommended):
+```bash
 python -m venv venv
 # On Windows:
 venv\Scripts\activate
 # On Mac/Linux:
 source venv/bin/activate
-Install dependencies:
+```
 
-bash
+3. Install dependencies:
+```bash
 pip install -r requirements.txt
-Run the analysis:
+```
 
-bash
+4. Run the analysis:
+```bash
 # Launch Jupyter Notebook
 jupyter notebook notebooks/shopify_trending_products_analysis.ipynb
-📊 Dataset Description
-Original Data Features:
-Product_ID: Unique identifier for each product
+```
 
-Product_Name: Name of the product
+## 📊 Dataset Description
 
-Category & Subcategory: Product classification
+### Original Data Features:
+- **Product_ID**: Unique identifier for each product
+- **Product_Name**: Name of the product
+- **Category & Subcategory**: Product classification
+- **Estimated_Total_Units_Sold_in_2025**: Projected sales volume
+- **Estimated_Revenue_in_2025_USD**: Projected revenue
+- **Price_Range_USD**: Price range (min-max)
+- **Trend_Score**: Popularity score (0-100)
+- **Trend_Source**: Source of trend data
+- **Notes**: Additional information
 
-Estimated_Total_Units_Sold_in_2025: Projected sales volume
+### Derived Features (Created in Analysis):
+- **Price_Min, Price_Max, Price_Avg**: Extracted from price range
+- **Success_Score**: Composite score combining trend and sales
+- **Price_Category**: Budget/Mid-Range/Premium/Luxury classification
+- **Revenue_Per_Unit**: Revenue divided by units sold
+- **Price_Range_Width**: Difference between max and min price
 
-Estimated_Revenue_in_2025_USD: Projected revenue
+## 🔍 Analysis Highlights
 
-Price_Range_USD: Price range (min-max)
+### Key Findings:
+- **Price Optimization**: Identified optimal price range for maximum success
+- **Category Performance**: Discovered top-performing product categories
+- **Trend Sources**: Analyzed most effective marketing channels
+- **Success Predictors**: Built ML model to predict product success
+- **Business Insights**: Generated actionable recommendations
 
-Trend_Score: Popularity score (0-100)
+### Visualizations Created:
+- Price distribution analysis
+- Category performance charts
+- Correlation heatmaps
+- Success prediction models
+- Multivariate analysis plots
 
-Trend_Source: Source of trend data
+## 🛠️ Technical Implementation
 
-Notes: Additional information
+### Libraries Used:
+- **Pandas & NumPy**: Data manipulation
+- **Matplotlib & Seaborn**: Data visualization
+- **Scikit-learn**: Machine learning models
+- **SciPy**: Statistical analysis
 
-Derived Features (Created in Analysis):
-Price_Min, Price_Max, Price_Avg: Extracted from price range
+### Analysis Pipeline:
+1. **Data Loading & Cleaning**: Extract and clean price data
+2. **Feature Engineering**: Create success metrics and categories
+3. **Exploratory Analysis**: Statistical insights and visualizations
+4. **Model Building**: Predictive modeling with Random Forest
+5. **Insight Generation**: Business recommendations
 
-Success_Score: Composite score combining trend and sales
+## 📈 Results
 
-Price_Category: Budget/Mid-Range/Premium/Luxury classification
+### Model Performance:
+- **Random Forest Regressor**: R² = [Your Model Score]
+- **Top Predictors**: [Most important features]
+- **Accuracy**: [Model accuracy metrics]
 
-Revenue_Per_Unit: Revenue divided by units sold
+### Business Recommendations:
+- **Pricing Strategy**: Optimal price range identified
+- **Category Focus**: Recommended product categories
+- **Marketing Channels**: Most effective trend sources
+- **Product Development**: Features that drive success
 
-Price_Range_Width: Difference between max and min price
+## 📝 Usage Examples
 
-🔍 Analysis Highlights
-Key Findings:
-Price Optimization: Identified optimal price range for maximum success
-
-Category Performance: Discovered top-performing product categories
-
-Trend Sources: Analyzed most effective marketing channels
-
-Success Predictors: Built ML model to predict product success
-
-Business Insights: Generated actionable recommendations
-
-Visualizations Created:
-Price distribution analysis
-
-Category performance charts
-
-Correlation heatmaps
-
-Success prediction models
-
-Multivariate analysis plots
-
-🛠️ Technical Implementation
-Libraries Used:
-Pandas & NumPy: Data manipulation
-
-Matplotlib & Seaborn: Data visualization
-
-Scikit-learn: Machine learning models
-
-SciPy: Statistical analysis
-
-Analysis Pipeline:
-Data Loading & Cleaning: Extract and clean price data
-
-Feature Engineering: Create success metrics and categories
-
-Exploratory Analysis: Statistical insights and visualizations
-
-Model Building: Predictive modeling with Random Forest
-
-Insight Generation: Business recommendations
-
-📈 Results
-Model Performance:
-Random Forest Regressor: R² = [Your Model Score]
-
-Top Predictors: [Most important features]
-
-Accuracy: [Model accuracy metrics]
-
-Business Recommendations:
-Pricing Strategy: Optimal price range identified
-
-Category Focus: Recommended product categories
-
-Marketing Channels: Most effective trend sources
-
-Product Development: Features that drive success
-
-📝 Usage Examples
-1. Run Complete Analysis:
-python
+### 1. Run Complete Analysis:
+```python
 # Execute the Jupyter notebook cells in order
 # All visualizations and reports will be generated automatically
-2. Make Predictions:
-python
+```
+
+### 2. Make Predictions:
+```python
 # Use the trained model to predict new product success
 example_product = {
     'Price_Avg': 75.0,
@@ -184,35 +159,31 @@ example_product = {
     'Estimated_Total_Units_Sold_in_2025': 50000
 }
 predicted_success = model.predict(example_product)
-🧪 Testing
-bash
+```
+
+## 🧪 Testing
+```bash
 # Run tests (if available)
 python -m pytest tests/
-🤝 Contributing
+```
+
+## 🤝 Contributing
 Contributions are welcome! Please follow these steps:
 
-Fork the repository
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit changes (`git commit -m 'Add AmazingFeature'`)
+4. Push to branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-Create a feature branch (git checkout -b feature/AmazingFeature)
-
-Commit changes (git commit -m 'Add AmazingFeature')
-
-Push to branch (git push origin feature/AmazingFeature)
-
-Open a Pull Request
-
-📄 License
+## 📄 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-🙏 Acknowledgments
-Dataset source: Kaggle
+## 🙏 Acknowledgments
+- Dataset source: Kaggle
+- Inspiration from e-commerce analytics projects
+- Open-source community for amazing libraries
 
-Inspiration from e-commerce analytics projects
-
-Open-source community for amazing libraries
-
-📧 Contact
-Inzamam Ul Haque - inzh@itu.dk
+## 📧 Contact
+**Inzamam Ul Haque** - inzh@itu.dk  
 Project Link: https://github.com/snow6060/shopify-trending-products-analysis
-
-
