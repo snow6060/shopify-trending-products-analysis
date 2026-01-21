@@ -132,9 +132,9 @@ jupyter notebook notebooks/shopify_trending_products_analysis.ipynb
 ## 📈 Results
 
 ### Model Performance:
-- **Random Forest Regressor**: R² = [Your Model Score]
-- **Top Predictors**: [Most important features]
-- **Accuracy**: [Model accuracy metrics]
+- **Random Forest Regressor**: R² = 0.9992
+- **Top Predictors**: Estimated_Total_Units_Sold_in_2025: 0.639 (63.9%), Trend_Score: 0.359 (35.9%), Price_Avg: 0.002 (0.2%)
+- **Accuracy**: The model explains 99.9% of the variance in Success Score
 
 ### Business Recommendations:
 - **Pricing Strategy**: Optimal price range identified
@@ -187,3 +187,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## 📧 Contact
 **Inzamam Ul Haque** - inzh@itu.dk  
 Project Link: https://github.com/snow6060/shopify-trending-products-analysis
+
