@@ -14,34 +14,39 @@ Generate actionable business insights for e-commerce optimization
 Create a reproducible analysis pipeline
 
 📁 Project Structure
-text
-shopify_trending_product_analysis/
-├── data/
-│   ├── raw/                          # Original dataset
-│   │   └── shopify_trending_products_2025.csv
-│   └── processed/                    # Cleaned and transformed data
-│       └── shopify_products_processed.csv
-├── visualizations/                   # All generated plots and charts
-│   ├── price_analysis_showcase.png
-│   ├── advanced_analysis_showcase.png
-│   └── individual_plots/             # Individual visualization files
-│       ├── 1_price_distribution.png
-│       ├── 2_price_vs_sales.png
-│       ├── 3_price_by_category.png
-│       ├── 4_correlation_heatmap.png
-│       └── 5_top_categories.png
-├── reports/                          # Analysis reports and summaries
-│   └── analysis_summary.csv
-├── notebooks/                        # Jupyter notebooks
-│   └── shopify_trending_products_analysis.ipynb
-├── src/                              # Source code modules
-│   ├── __init__.py
-│   ├── data_loader.py
-│   ├── preprocessing.py
-│   └── analysis.py
-├── requirements.txt                  # Python dependencies
-├── README.md                         # This file
-└── .gitignore                        # Git ignore file
+# Project Structure
+
+```plaintext
+📦 SHOPIFY_TRENDING_PRODUCT_ANALYSIS
+├── 📂 config/
+├── 📂 data/
+│   ├── 📂 processed/
+│   │   └── 📄 shopify_products_processed.csv
+│   └── 📂 raw/
+│       └── 📄 shopify_trending_products_2025.csv
+├── 📂 models/
+│   └── 📦 trained_model.pkl
+├── 📂 notebook/
+│   └── 📓 shopify_trending_products_analysis.ipynb
+├── 📂 reports/
+│   └── 📊 analysis_summary.csv
+├── 📂 src/
+│   ├── 📄 __init__.py
+│   ├── 📄 analysis.py
+│   ├── 📄 data_loader.py
+│   └── 📄 preprocessing.py
+├── 📂 tests/
+│   └── 🧪 test_analysis.py
+├── 📂 visualizations/
+│   ├── 📂 individual_plots/
+│   │   ├── 🖼️ advanced_analysis_showcase.png
+│   │   └── 🖼️ price_analysis_showcase.png
+│   └── 🖼️ analysis_summary_plot.png
+├── 📄 .gitignore
+├── 📋 annie-report-1768942942625.pdf
+├── 📄 README.md
+└── 📄 requirements.txt
+```
 🚀 Quick Start
 Prerequisites
 Python 3.8+
@@ -209,4 +214,5 @@ Open-source community for amazing libraries
 📧 Contact
 Inzamam Ul Haque - inzh@itu.dk
 Project Link: https://github.com/snow6060/shopify-trending-products-analysis
+
 
